@@ -1,3 +1,7 @@
+# Write code that classifies an amount of cents (stored in a variable named "amount") as a combination of larger coins.
+# Your code should use 2 euros (200 cents), euros (100 cents), 50 cents, 20 cents, 10 cents, 5 cents, 2 cents, and cents (1 cent).
+# The result is that you express the amount in the minimum number of coins needed.
+
 amount = int(input("Enter the amount in cents: "))
 
 euros2 = amount // 200
