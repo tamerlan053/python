@@ -1,3 +1,7 @@
+# Write a program that calculates the costs for installing wall-to-wall carpeting.
+# The user of the program provides the length and width of the carpet (expressed in meters), the price per square meter, and the installation costs per square meter.
+# The program should output the cost of the carpet, installation costs, and total costs.
+
 length = float(input("Enter the length of the carpet: "))
 width = float(input("Enter the width of the carpet: "))
 price_per_square_meter = float(input("Enter the price per square meter: "))
