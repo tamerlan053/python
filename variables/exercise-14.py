@@ -1,3 +1,7 @@
+# Given: number of seconds.
+# Required: number of hours, minutes, seconds.
+
+
 seconds = int(input("Enter the number of seconds: "))
 
 hours = seconds // 3600
