@@ -1,3 +1,8 @@
+# Enter the article number, quantity, and unit price via the keyboard. The input ends when the article number is 999. Requested output:
+# Print the details for each article (article number, quantity, unit price, amount).
+# Display the total amount to be paid for the purchase.
+
+
 total_amount = 0
 
 article = int(input("Enter article number: "))
