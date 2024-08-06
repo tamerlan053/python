@@ -10,3 +10,8 @@ list1 = [1, 2, 3]
 list2 = [3, 2, 1]
 
 print(are_permutations(list1, list2))  # Output: True
+
+list3 = [1, 2, 3]
+list4 = [1, 2, 2]
+
+print(are_permutations(list3, list4))  # Output: False
