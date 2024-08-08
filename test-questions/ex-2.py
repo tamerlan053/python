@@ -5,3 +5,8 @@ Problem
 def is_palindrome(s):
     s = ''.join(c for c in s if c.isalnum()).lower()
     return s == s[::-1]
+
+# Examples
+print(is_palindrome("A man, a plan, a canal, Panama"))  # Output: True
+print(is_palindrome("racecar"))  # Output: True
+print(is_palindrome("hello"))  # Output: False
