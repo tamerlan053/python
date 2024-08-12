@@ -1,3 +1,12 @@
+# Exercise 4
+
+# Enter 2 numbers via the keyboard. Print the following:  
+# -The smallest number is ..
+# -The square of the smallest number is ..
+# -The largest number divided by the smallest number is .. (Be careful with division by 0!)
+
+# Avoid identical lines of code!
+
 number1 = int(input("Enter the first number: "))
 number2 = int(input("Enter the second number: "))
 
