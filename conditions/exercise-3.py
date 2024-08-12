@@ -1,3 +1,8 @@
+# Exercise 3
+
+# Calculate the arrival time of a flight. The departure time (hours and minutes in 2 different variables) and the duration in minutes are entered.  
+# For example, if the departure hour is 22, the departure minute is 18, and the duration is 170 minutes, the arrival hour will be 1, and the arrival minute will be 8.
+
 departure_hour = int(input("Enter departure hour: "))
 departure_minutes = int(input("Enter departure minutes: "))
 duration_in_minutes = int(input("Enter duration in minutes: "))
