@@ -6,3 +6,9 @@
 # < 80% distinction
 # < 90% high distinction
 # ≥ 90% highest distinction.
+
+result_1 = int(input("Enter result 1: "))
+result_2 = int(input("Enter result 2: "))
+result_3 = int(input("Enter result 3: "))
+
+total = ((result_1 + result_2 + result_3) / 60) * 100
