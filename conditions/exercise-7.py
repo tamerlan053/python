@@ -12,3 +12,17 @@ result_2 = int(input("Enter result 2: "))
 result_3 = int(input("Enter result 3: "))
 
 total = ((result_1 + result_2 + result_3) / 60) * 100
+grade = ""
+
+if total < 60:
+    grade = "insufficient"
+elif total < 70:
+    grade = "sufficient"
+elif total < 80:
+    grade = "distinction"
+elif total < 90:
+    grade = "high distinction"
+else:
+    grade = "highest distinction"
+
+print("The student's percentage is", total, "and their grade is", grade)
