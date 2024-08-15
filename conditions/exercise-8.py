@@ -13,3 +13,15 @@
 # Write a program that calculates the price of a plane ticket. 
 # The distance in km and the class (1 = economy class, 2 = charter, and 3 = business trip) must be entered. 
 # Print the final ticket price. This price must be expressed in euros.
+
+distance = int(input("Enter the flight distance (in km): "))
+class_type = int(input("Enter the class of the flight (1=economy; 2=charter; 3=business): "))
+
+price = 0
+
+if distance < 1000:
+    price = distance * 0.25
+elif distance >= 1000 and distance <= 2999:
+    price = distance * 0.2
+else:
+    price = distance * 0.12
