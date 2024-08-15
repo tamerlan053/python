@@ -25,3 +25,10 @@ elif distance >= 1000 and distance <= 2999:
     price = distance * 0.2
 else:
     price = distance * 0.12
+
+if class_type == 2:
+    price = price - (price * 0.2)
+elif class_type == 3:
+    price = price + (price * 0.3)
+
+print("The price of your ticket is", price, "Euro")
