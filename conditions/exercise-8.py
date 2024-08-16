@@ -1,4 +1,5 @@
 # Exercise 8
+
 # The price of a plane ticket is determined by several factors, namely:
 
 # + The length of the flight or the distance in km
