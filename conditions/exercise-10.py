@@ -9,3 +9,11 @@
 # The minimum amount to be paid is 62.5 euros.
 
 # Use a constant with the value of the current year.
+
+BASIS = 100
+CURRENT_YEAR = 2023
+
+age = int(input("Enter your age: "))
+year_of_joining = int(input("Enter your year of joining the club: "))
+
+price = BASIS
