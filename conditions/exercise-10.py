@@ -17,3 +17,13 @@ age = int(input("Enter your age: "))
 year_of_joining = int(input("Enter your year of joining the club: "))
 
 price = BASIS
+
+if age < 21 or age > 60:
+    price -= 14.5
+
+price -= 2.5 * (CURRENT_YEAR - year_of_joining)
+
+if price < 62.5:
+    price = 62.5
+
+print("The contribution for this member is:", price)
