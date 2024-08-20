@@ -23,3 +23,17 @@
 
 # An extra discount of 10% on the total price is given during the low season for codes O and H.
 # Enter the necessary information and print the price of a holiday for one person.
+
+stars = int(input("Enter the number of stars (1 - 5): "))
+code = input("Enter the code: ")
+overnights = int(input("Enter the number of overnights: "))
+season = input("Enter the season: ")
+
+night_price = 0
+
+if stars == 1:
+    night_price = 30
+elif stars == 2 or stars == 3:
+    night_price = 40
+else:
+    night_price = 55
