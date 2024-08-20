@@ -37,3 +37,12 @@ elif stars == 2 or stars == 3:
     night_price = 40
 else:
     night_price = 55
+
+if code == "O":
+    night_price = night_price + (night_price * 0.2)
+elif code == "H":
+    night_price = night_price + (night_price * 0.5)
+elif code == "V":
+    night_price = night_price + (night_price * 0.6)
+elif code == "A":
+    night_price = night_price + (night_price * 0.6 + 80)
