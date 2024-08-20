@@ -46,3 +46,10 @@ elif code == "V":
     night_price = night_price + (night_price * 0.6)
 elif code == "A":
     night_price = night_price + (night_price * 0.6 + 80)
+
+total_price = night_price * overnights
+
+if season == "L" and (code == "O" or code == "H"):
+    total_price = total_price - (total_price * 0.1)
+
+print("The price for this person's vacation is:", total_price)
