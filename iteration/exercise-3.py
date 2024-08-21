@@ -1,6 +1,7 @@
+# Exercise 3
+
 # Read a sequence of integers and print their sum.
 # This sequence ends with 0. Also, print the number of negative numbers entered.
-
 
 sum_total = 0
 neg_count = 0
