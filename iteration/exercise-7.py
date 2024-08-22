@@ -1,6 +1,7 @@
+# Exercise 7
+
 # Read the temperature measured at 12:00 noon for 10 days via the keyboard.
 # Requested output: + the highest temperature for these 10 days + the average temperature for these 10 days.
-
 
 count = 0
 total = 0
