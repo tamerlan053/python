@@ -14,7 +14,28 @@ total = 0
 highest = 0
 
 while last_name != "/" and last_name != "*":
+    first_name = input("Enter your first name: ")
+    years_of_service = int(input("Enter the number of years of service: "))
 
+    while years_of_service < 0 or years_of_service > 40:
+        years_of_service = int(input("Enter a correct number of years of service (between 0 and 40)"))
+
+    if years_of_service < 5:
+        bonus = 0
+    else:
+        bonus = years_of_service * 25
+
+    if bonus > highest:
+        highest = bonus
+
+    total += bonus
+
+    print("last_name =", last_name)
+    print("first_name =", first_name)
+    print("years_of_service =", years_of_service)
+    print("bonus =", bonus)
+
+    last_name = input("Enter your last name: ")
 
 print("The total bonus to be paid is", total)
 print("The highest bonus is", highest)
