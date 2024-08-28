@@ -7,3 +7,14 @@
 # The bonus is calculated as follows: the number of years of service * 25 euros. 
 # If the number of years of service is less than 5, the person receives 0 euros as a bonus. Print the last name, first name, number of years of service, and bonus for each person. 
 # At the end of the program, print the total bonus to be paid and the highest bonus.
+
+last_name = input("Enter your last name: ")
+
+total = 0
+highest = 0
+
+while last_name != "/" and last_name != "*":
+
+
+print("The total bonus to be paid is", total)
+print("The highest bonus is", highest)
