@@ -12,3 +12,27 @@
 
 # The reductions can be accumulated but the minimum membership fee is €50.
 # The calculation of the membership fee takes place in a function.
+
+def calculate_membership_fee(age,children, joining_year, income):
+    INITIAL_FEE = 100
+    CURRENT_YEAR = 2023
+    total = INITIAL_FEE
+
+    if age > 60:
+        total -= 15
+
+    if children > 4:
+        total -= 35
+    else:
+        total -= (children * 7.5)
+
+    if (CURRENT_YEAR - joining_year) > 20:
+        total -= 12.5
+
+    if income < 7500:
+        total -= 25
+
+    if total < 50:
+        total = 50
+
+    return total
