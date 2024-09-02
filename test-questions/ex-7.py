@@ -14,3 +14,29 @@ Problem
 # -The final price must not be lower than €100, regardless of the discounts.
 
 # The calculation of the final price takes place in a function.
+
+def calculate_final_price(nights, room_type, is_member):
+    BASE_PRICES = {
+        'single': 50,
+        'double': 90,
+        'suite': 150
+    }
+    total_price = nights * BASE_PRICES[room_type]
+    
+    discount = 0
+
+    if is_member:
+        discount += 10  # 10% discount for loyalty members
+    
+    if nights > 5:
+        discount += 5  # 5% discount for bookings over 5 nights
+    
+    if discount > 20:
+        discount = 20  # Max discount is 20%
+
+    final_price = total_price * (1 - discount / 100)
+    
+    if final_price < 100:
+        final_price = 100  # Minimum price is €100
+    
+    return final_price
