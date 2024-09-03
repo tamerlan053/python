@@ -15,3 +15,8 @@ def is_factorial(n):
         factorial *= i
     
     return factorial == n
+
+# Examples
+print(is_factorial(120))  # Output: True (5! = 120)
+print(is_factorial(24))   # Output: False
+print(is_factorial(720))  # Output: True (6! = 720)
