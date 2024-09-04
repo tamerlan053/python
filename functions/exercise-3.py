@@ -43,6 +43,15 @@ def main():
 
     while name.lower() != "x":
         age = int(input("Enter the age: "))
+        children = int(input("Enter the number of children: "))
+        income = int(input("Enter the income: "))
+        joining_year = int(input("Enter the joining year: "))
 
+        total = calculate_membership_fee(age, children, joining_year, income)
+
+        print(f"For {name}, the membership fee is {total}")
+
+        name = input("Enter the name: ")
+        
 if __name__ == '__main__':
     main()
