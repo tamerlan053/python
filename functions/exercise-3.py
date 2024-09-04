@@ -36,3 +36,13 @@ def calculate_membership_fee(age,children, joining_year, income):
         total = 50
 
     return total
+
+
+def main():
+    name = input("Enter the name: ")
+
+    while name.lower() != "x":
+        age = int(input("Enter the age: "))
+
+if __name__ == '__main__':
+    main()
