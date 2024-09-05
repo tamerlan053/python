@@ -17,3 +17,22 @@ def give_feedback(input_number, random_number):
         return "lower"
     else:
         return "congratulations, the number has been guessed"
+
+def main():
+    random_number = generate_random()
+    counter = 0
+
+    while counter < 4:
+        input_number = int(input("Enter a number: "))
+
+        if input_number == random_number:
+            print("Congratulations, the number has been guessed")
+            return
+
+        print(give_feedback(input_number, random_number))
+        counter += 1
+
+    print("Your 4 attempts are over")
+
+if __name__ == '__main__':
+    main()
