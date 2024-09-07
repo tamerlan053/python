@@ -20,3 +20,6 @@ def word_frequency_counter(text):
 
     for word, count in sorted_words:
         print(f"{word}: {count}")
+
+text = input("Enter a paragraph of text: ")
+word_frequency_counter(text)
