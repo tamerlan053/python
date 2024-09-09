@@ -11,3 +11,14 @@ def fibonacci(n):
         sequence.append(a)
         a, b = b, a + b
     return sequence
+
+def main():
+    num_terms = int(input("Enter the number of terms you want in the Fibonacci sequence: "))
+    if num_terms <= 0:
+        print("Please enter a positive integer")
+    else:
+        print("Fibonacci sequence:")
+        print(fibonacci(num_terms))
+
+if __name__ == "__main__":
+    main()
