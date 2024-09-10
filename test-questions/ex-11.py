@@ -16,3 +16,14 @@ def count_vowels(s):
             total_vowels += 1
 
     return count, total_vowels
+
+def main():
+    user_input = input("Enter a string to count vowels: ")
+    vowels_count, total = count_vowels(user_input)
+    print("Total vowels:", total)
+    print("Count of each vowel:")
+    for vowel, c in vowels_count.items():
+        print(f"{vowel}: {c}")
+
+if __name__ == "__main__":
+    main()
