@@ -9,3 +9,9 @@ def longest_palindromic_substring(s):
         return ""
 
     dp = [[False] * n for _ in range(n)]
+
+    start = 0
+    max_len = 1
+
+    for i in range(n):
+        dp[i][i] = True
