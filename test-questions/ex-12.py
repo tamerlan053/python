@@ -24,3 +24,15 @@ def longest_palindromic_substring(s):
             
     for length in range(3, n + 1):  
         for i in range(n - length + 1):
+            j = i + length - 1 
+
+            if s[i] == s[j] and dp[i + 1][j - 1]:
+                dp[i][j] = True
+                start = i
+                max_len = length
+
+    return s[start:start + max_len]
+
+
+s = "babad"
+print(longest_palindromic_substring(s))
