@@ -1,4 +1,4 @@
-# Exercise 10
+Problem
 
 # Write a Python program that calculates and displays the first n numbers in the Fibonacci sequence. 
 # The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. 

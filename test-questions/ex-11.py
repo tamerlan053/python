@@ -1,4 +1,4 @@
-# Exercise 11
+Problem
 
 # Write a Python program to count the number of vowels in a given string. 
 # The string should be input by the user. 

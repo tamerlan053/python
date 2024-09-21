@@ -1,4 +1,4 @@
-# Exercise 9
+Problem
 
 # Write a Python program that reads a paragraph of text from the user and counts the frequency of each word in the text. 
 # The program should then display the words in order of frequency, from most common to least common. 
