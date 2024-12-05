@@ -20,3 +20,14 @@ def longest_word(words):
             if word[:i] not in word_set:
                 return False
         return True
+
+    for word in words:
+        if can_build(word):
+            return word
+    
+    return ""
+
+# Example usage:
+words = ["a", "banana", "app", "appl", "ap", "apply", "apple"]
+result = longest_word(words)
+print(result)
