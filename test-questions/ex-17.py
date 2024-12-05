@@ -10,3 +10,13 @@ Problem
 # "app" is built from "ap".
 # "appl" is built from "app".
 # "apple" is built from "appl".
+
+def longest_word(words):
+    word_set = set(words)
+    words.sort(key=lambda x: (-len(x), x))
+    
+    def can_build(word):
+        for i in range(1, len(word)):
+            if word[:i] not in word_set:
+                return False
+        return True
